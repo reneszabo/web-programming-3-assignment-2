@@ -1,0 +1,18 @@
+# -- Netbeans  ----------------------------------------
+nbproject
+/nbproject/
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+test
+
+# -- OS ------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
