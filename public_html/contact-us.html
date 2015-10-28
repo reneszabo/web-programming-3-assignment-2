@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <aside class="aside aside-1">
+          <div id="logo">
+            <a class="navbar-brand" href="index.html">
+              <img class="img-responsive" src="img/github.png" alt="About Git"/>
+              <div>GIT</div>
+            </a>
+          </div>
+          <section>
+            <h3 class="event">
+              October 9, 2015
+              8:00am - 3:30pm 
+            </h3>
+          </section>
+          <hr>
+          <section>
+            <h4 class="event">
+              Two Locations!
+            </h4>
+            <div class="location">
+              Hillsboro High School 
+              3285 SE Rood Bridge 
+              Hillsboro, OR 97123 
+            </div>
+
+            <div class="location">
+              McNary High School 
+              595 Chemawa Rd N 
+              Keizer, OR 97303
+            </div>
+          </section>
+          <section class="social">
+            <a href="#facebook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <a href="#twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </section>
+        </aside>
+        <main>
+          <nav class="navbar-flex">
+            <ul class="navbar-flex-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="starting-point.html">Starting Point</a></li>
+              <li><a href="pull-request.html">Pull Request</a></li>
+              <li class="active"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <section>
+            <h2>Still have some questions ?</h2>
+            <b>Feel free to contact us, we will post the solution for everyone</b>
+            <img class="img-responsive" src="img/collabocats.jpg" alt="Git is not github"/>
+            <form method="POST" action="#do-to-server">
+              <label for="customer_lname">Last name</label>
+              <input type="text" id="customer_lname" name="customer[lname]" required="required">
+              <label for="customer_fname">First name</label>
+              <input type="text" id="customer_fname" name="customer[fname]" required="required">
+              <label for="customer_initial">Initial</label>
+              <select name="customer[initial]" required="required" id="customer_initial">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+              </select>
+              <label for="customer_areacode">Areacode</label>
+              <input type="text" id="customer_areacode" name="customer[areacode]" required="required">
+              <label for="customer_phone">Phone</label>
+              <input type="tel" id="customer_phone" name="customer[phone]" required="required">
+              <label for="customer_description">Description</label>
+              <textarea type="tel" id="customer_description" name="customer[description]" required="required"></textarea>
+              <hr>
+              <div class="action">
+                <button class="btn" type="submit">Submit</button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
