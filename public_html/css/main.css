@@ -237,14 +237,39 @@ body {
   background: red;
   background: #e9e9e9 url(../img/texture.jpg);
 }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #c4c4c4;
+  margin: 1em 0;
+  padding: 0;
+}
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: #db4d5e;
   margin: 10px 0;
 }
+h1 {
+  font-size: 43.2px;
+}
 h2 {
   font-size: 36px;
+}
+h3 {
+  font-size: 28.8px;
+}
+h4 {
+  font-size: 25.2px;
+}
+a {
+  text-decoration: none;
+  color: #2980b9;
+}
+a:hover {
+  color: #20638f;
 }
 .container {
   max-width: 1190px;
@@ -280,7 +305,6 @@ h2 {
 }
 .navbar-flex .navbar-flex-nav > li > a {
   display: block;
-  text-decoration: none;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
@@ -299,7 +323,6 @@ h2 {
 .navbar-brand {
   padding: 6px 12px;
   display: block;
-  text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
@@ -312,7 +335,6 @@ h2 {
 .navbar-brand:focus {
   color: #777777;
   background-color: transparent;
-  text-decoration: none;
 }
 .wrapper {
   display: -webkit-box;
@@ -324,7 +346,25 @@ h2 {
 .wrapper > aside {
   background: #eeeeee;
   flex: 1;
-  padding: 0 12px;
+  padding: 0 24px;
+}
+.wrapper > aside h1,
+.wrapper > aside h2,
+.wrapper > aside h3,
+.wrapper > aside h4 {
+  color: #55a5d9;
+  margin: 10px 0;
+}
+.wrapper > aside .event {
+  text-align: center;
+}
+.wrapper > aside .location {
+  color: #55a5d9;
+  margin: 24px 0;
+  padding: 0 48px;
+}
+.wrapper > aside .social {
+  text-align: center;
 }
 .wrapper > main {
   flex: 3;
