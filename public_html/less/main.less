@@ -8,11 +8,7 @@
 @import "../less_imports/normalize.less";
 @import "../less_imports/utilities.less";
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 
 html,body{
   color: @text-color;
@@ -22,11 +18,9 @@ html,body{
   height: 100%;
   font-family: @font-family-sans-serif;
   font-weight: normal;
-
 }
 body{
-  background: @body-bg;
-  background: #e9e9e9 url(../img/texture.jpg);
+  background: @body-bg url(../img/texture.jpg);
 }
 hr{
   display: block;
@@ -40,7 +34,6 @@ h1,h2,h3,h4{
   color: lighten(@color-primary,15%);
   margin: 10px 0;
 }
-
 h1{
   font-size: @font-size-large*1.2;
 }
@@ -53,13 +46,14 @@ h3{
 h4{
   font-size: @font-size-large*0.70;
 }
-
 a{
   text-decoration: none;
   color: @color-secondary;
   &:hover{
-
     color: darken(@color-secondary,10%);
+    img{
+      -webkit-filter: brightness(2); filter: brightness(2);
+    }
   }
 }
 .container{
@@ -155,7 +149,6 @@ a{
     }
   }
 }
-
 pre{
   background: #eee;
   font-size: 0.9em;
@@ -179,7 +172,6 @@ pre{
     overflow: auto;
   }
 }
-
 form{
   label, input, select, textarea{
     display: block;
@@ -210,32 +202,50 @@ form{
   .action{
     text-align: right;
   }
-  .btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: @color-secondary;
-    color:white;
-    &:hover {
-      color: #333;
-      background-color: #e6e6e6;
-      border-color: #adadad;
-    }
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: @color-secondary;
+  color:white;
+  &:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
   }
+}
+
+footer{
+  background: @gray-dark;
+  border-bottom: 4px solid @gray-light;
+  .navbar-flex {
+    background-color: transparent;
+  }
+  a:hover img{
+    -webkit-filter: brightness(100); filter: brightness(100);
+  }
+  .img-white{
+    height: 55px;
+    width: 55px;
+  }
+}
+.img-white{
+  -webkit-filter: brightness(100); filter: brightness(100);
 }
