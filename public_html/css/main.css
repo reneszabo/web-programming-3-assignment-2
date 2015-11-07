@@ -475,4 +475,18 @@ footer .img-white {
   -webkit-filter: brightness(100);
   filter: brightness(100);
 }
+div .reference {
+  text-align: right;
+}
+div .reference a {
+  display: inline-block;
+  margin: 4px 10px;
+  padding: 4px 10px;
+  border: 1px solid #2980b9;
+  border-radius: 3px;
+}
+div .reference a:hover {
+  color: white;
+  background: #2980b9;
+}
 /*# sourceMappingURL=main.css.map */
